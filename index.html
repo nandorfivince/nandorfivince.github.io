@@ -449,7 +449,7 @@
         ui: {
           profileKicker: "Professzionális profil",
           skillsKicker: "Technológiai eszköztár",
-          projectsKicker: "Portfólió projektek",
+          projectsKicker: "Portfólió projektek - HAMAROSAN",
           trainingsKicker: "Szakmai továbbképzések (2025–2026)",
           eduKicker: "Végzettség",
           langsKicker: "Nyelvtudás",
@@ -458,7 +458,7 @@
           expKicker: "Szakmai tapasztalat összefoglaló",
           jobsKicker: "Munkahelyek (kronológia)",
           valueKicker: "Motivációm & hozzáadott értékem",
-          projectsAllLabel: "Minden projekt elérhető:",
+          projectsAllLabel: "Hamarosan minden projekt elérhető:",
           footnote: "Tipp: a “PDF / Print” gomb a böngésző nyomtatását nyitja meg. Válaszd a “Save as PDF” opciót."
         },
         name: "Nándorfi Vince",
@@ -476,11 +476,11 @@
         ],
         skillGroups: [
           { title: "Programozási nyelvek", items: ["Python","JavaScript/TypeScript","Java","Bash/Shell scripting"] },
-          { title: "Backend", items: ["Django","Django REST Framework","FastAPI (alapok)"] },
-          { title: "Frontend", items: ["React.js","HTML5","CSS3","Tailwind CSS"] },
-          { title: "Testing", items: ["Playwright","Selenium","RestAssured","TestNG","JUnit"] },
-          { title: "AI/ML", items: ["TensorFlow","Keras","NumPy","Pandas","OpenAI API"] },
-          { title: "Infrastruktúra & DevOps", items: ["Docker","Kubernetes","Terraform","AWS (EC2, RDS, S3)","Jenkins/Jenkins Pipeline","CI/CD architektúra","Git/GitHub Actions","Nginx","Tomcat"] },
+          { title: "Backend", items: ["Django","Django REST Framework"] },
+          { title: "Frontend", items: ["React.js","HTML5","CSS3","SASS/SCSS"] },
+          { title: "Testing", items: ["Playwright","Selenium","RestAssured","TestNG","JUnit","Requests","Pytest"] },
+          { title: "AI/ML", items: ["TensorFlow","Keras","NumPy","Pandas","OpenAI API","RAG","LLM","SDLC-be integrált lokális AI agent"] },
+          { title: "Infrastruktúra & DevOps", items: ["Docker","Kubernetes","Terraform","AWS (EC2, RDS, S3)","Jenkins/Jenkins Pipeline","CI/CD architektúra","Git/GitHub"] },
           { title: "Adatbázisok", items: ["SQLite","MySQL","PostgreSQL"] },
           { title: "Módszertanok & elvek", items: ["Agile/Scrum","TDD/BDD/ATDD","SOLID","KISS","YAGNI","Clean Code","Refactoring","Design Patterns (OOP)","ISTQB Foundation & Test Management","DISC Soft Skills"] }
         ],
@@ -488,29 +488,29 @@
           {
             name: "Mit Együnk Ma?",
             subtitle: "Étkezés támogató alkalmazás",
-            tech: ["Python","Django","PostgreSQL","Docker","HTML/CSS","React.js"],
-            desc: "Családok számára készült meal planning alkalmazás receptkezeléssel, bevásárlólista-generálással és diétás preferenciák támogatásával. RESTful API backend, PostgreSQL adatbázis, Docker konténerizálás."
+            tech: ["HTML/CSS/JS","React.js","Open AI API"],
+            desc: "Meal planning alkalmazás receptkezeléssel, bevásárlólista-generálással és diétás preferenciák támogatásával."
           },
           {
             name: "RentMateLite",
             subtitle: "Lakáskiadás menedzsment rendszer",
-            tech: ["React.js","TypeScript","Django REST Framework","PostgreSQL"],
+            tech: ["React.js","TypeScript","Django REST Framework","SQLite"],
             desc: "Modern SPA alkalmazás ingatlan-kiadással foglalkozók számára. Bérlőkövetés, számlázás automatizálás, dokumentum kezelés, analytics dashboard."
           },
           {
             name: "Kreatív Hobbi",
             subtitle: "Hobbi közösségi platform",
-            tech: ["React.js","Django","Playwright (E2E testing)","Docker Compose"],
-            desc: "Közösségi platform hobbi csoportok szervezésére, eseménykezeléssel és chat funkcióval."
+            tech: ["HTML","CSS","JS","Design kísérlet"],
+            desc: "Közösségi platform hobbi csoportok szervezésére, eseménykezeléssel és webshop."
           }
         ],
         trainings: [
           {
             title: "Python Alapok & Webtechnológiák",
             org: "Cubix Academy",
-            meta: "14 hetes intenzív full-time képzés (280+ óra) – Minősítés: Kiváló (Maximális pontszám)",
+            meta: "14 hetes intenzív full-time képzés (280+ óra) – Vizsga minősítés: Kiváló (Maximális pontszám)",
             bullets: [
-              "Python OOP, adatstruktúrák, algoritmusok",
+              "Python OOP & nyelvi elemek, adatstruktúrák, algoritmusok",
               "web alapok (HTTP, REST API-k), adatbázis kezelés",
               "Git verziókezelés, clean code gyakorlatok"
             ]
@@ -518,17 +518,16 @@
           {
             title: "Webfejlesztés Alapjai (JavaScript/TypeScript)",
             org: "Cubix Academy",
-            meta: "14 hetes intenzív full-time képzés (280+ óra) – Minősítés: Kiváló (Maximális pontszám)",
+            meta: "14 hetes intenzív full-time képzés (280+ óra) – Vizsga minősítés: Kiváló (Maximális pontszám)",
             bullets: [
               "Modern JavaScript (ES6+), TypeScript, aszinkron programozás",
-              "DOM manipuláció, HTTP kliens-szerver kommunikáció",
-              "fejlesztői eszközök, debugging"
+              "DOM manipuláció, HTTP kliens-szerver kommunikáció","CSS,SCSS,SASS","fejlesztői eszközök, debugging"
             ]
           },
           {
             title: "Mesterséges Intelligencia Fejlesztő",
             org: "IT Betyár",
-            meta: "5 hetes specializált képzés – Minősítés: Kiváló (Maximális pontszám)",
+            meta: "5 hetes specializált képzés – Vizsga minősítés: Kiváló (Maximális pontszám)",
             bullets: [
               "Machine Learning alapok, Neural Networks (ANN, CNN)",
               "TensorFlow/Keras, adatelőkészítés, model training & evaluation",
@@ -611,7 +610,7 @@
           expKicker: "Experience summary",
           jobsKicker: "Employment history",
           valueKicker: "Motivation & value",
-          projectsAllLabel: "All projects:",
+          projectsAllLabel: "All projects will be available soon:",
           footnote: "Tip: “PDF / Print” opens your browser print dialog. Choose “Save as PDF”."
         },
         name: "Vince Nándorfi",
@@ -629,11 +628,11 @@
         ],
         skillGroups: [
           { title: "Languages", items: ["Python","JavaScript/TypeScript","Java","Bash/Shell scripting"] },
-          { title: "Backend", items: ["Django","Django REST Framework","FastAPI (fundamentals)"] },
-          { title: "Frontend", items: ["React.js","HTML5","CSS3","Tailwind CSS"] },
-          { title: "Testing", items: ["Playwright","Selenium","RestAssured","TestNG","JUnit"] },
-          { title: "AI/ML", items: ["TensorFlow","Keras","NumPy","Pandas","OpenAI API"] },
-          { title: "Infrastructure & DevOps", items: ["Docker","Kubernetes","Terraform","AWS (EC2, RDS, S3)","Jenkins/Jenkins Pipeline","CI/CD architecture","Git/GitHub Actions","Nginx","Tomcat"] },
+          { title: "Backend", items: ["Django","Django REST Framework"] },
+          { title: "Frontend", items: ["React.js","HTML5","CSS3","SASS/SCSS"] },
+          { title: "Testing", items: ["Playwright","Selenium","RestAssured","TestNG","JUnit","Requests","Pytest"] },
+          { title: "AI/ML", items: ["TensorFlow","Keras","NumPy","Pandas","OpenAI API","RAG","LLM","SDLC integrated local AI engine"] },
+          { title: "Infrastructure & DevOps", items: ["Docker","Kubernetes","Terraform","AWS (EC2, RDS, S3)","Jenkins/Jenkins Pipeline","CI/CD architecture","Git/GitHub"] },
           { title: "Databases", items: ["SQLite","MySQL","PostgreSQL"] },
           { title: "Methods & principles", items: ["Agile/Scrum","TDD/BDD/ATDD","SOLID","KISS","YAGNI","Clean Code","Refactoring","OOP Design Patterns","ISTQB Foundation & Test Management","DISC Soft Skills"] }
         ],
@@ -641,39 +640,39 @@
           {
             name: "What Should We Eat Today?",
             subtitle: "Meal planning assistant app",
-            tech: ["Python","Django","PostgreSQL","Docker","HTML/CSS","React.js"],
-            desc: "Meal planning application for families with recipe management, shopping list generation, and dietary preferences. RESTful API backend, PostgreSQL, Dockerized deployment."
+            tech: ["HTML/CSS/JS","React.js","Open AI API"],
+            desc: "Meal planning application with recipe management, shopping list generation, and dietary preferences."
           },
           {
             name: "RentMateLite",
             subtitle: "Rental management system",
-            tech: ["React.js","TypeScript","Django REST Framework","PostgreSQL"],
+            tech: ["React.js","TypeScript","Django REST Framework","SQLite"],
             desc: "Modern SPA for property rentals: tenant tracking, automated invoicing, document management, and analytics dashboard."
           },
           {
             name: "Creative Hobby",
             subtitle: "Hobby community platform",
-            tech: ["React.js","Django","Playwright (E2E)","Docker Compose"],
-            desc: "Community platform for organizing hobby groups with event management and chat features."
+            tech: ["HTML","CSS","JS","Design experiment"],
+            desc: "Community platform for organizing hobby groups with event management and webshop."
           }
         ],
         trainings: [
           {
             title: "Python Fundamentals & Web Technologies",
             org: "Cubix Academy",
-            meta: "14-week full-time (280+ hours) – Grade: Excellent",
-            bullets: ["Python OOP, data structures, algorithms","HTTP, REST APIs, databases","Git and clean code practices"]
+            meta: "14-week full-time (280+ hours) – Exam grade: Excellent",
+            bullets: ["Python OOP & language elements, data structures, algorithms","HTTP, REST APIs, databases","Git and clean code practices"]
           },
           {
             title: "Web Development Fundamentals (JavaScript/TypeScript)",
             org: "Cubix Academy",
-            meta: "14-week full-time (280+ hours) – Grade: Excellent",
-            bullets: ["Modern JavaScript (ES6+), TypeScript, async programming","DOM, HTTP client–server communication","Developer tooling and debugging"]
+            meta: "14-week full-time (280+ hours) – Exam grade: Excellent",
+            bullets: ["Modern JavaScript (ES6+), TypeScript, async programming","DOM, HTTP client–server communication","CSS,SCSS,SASS","Developer tooling and debugging"]
           },
           {
             title: "AI Developer",
             org: "IT Betyár",
-            meta: "5-week specialization – Grade: Excellent",
+            meta: "5-week specialization – Exam grade: Excellent",
             bullets: ["ML fundamentals, ANN/CNN","TensorFlow/Keras, data preparation, training & evaluation","AI API integration"]
           },
           {
@@ -932,4 +931,3 @@
   </script>
 </body>
 </html>
-
