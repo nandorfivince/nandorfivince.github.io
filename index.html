@@ -278,6 +278,23 @@
       line-height: 1.65;
     }
 
+    /*A-B*/
+    .project-variants{
+      margin-top: 4px;
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .project-variants a{
+      color: var(--accent-2);
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(15,118,110,0.45);
+    }
+
+    .project-variants a:hover{
+      border-bottom-style: solid;
+    }
+
     .timeline{
       border: 1px solid var(--line);
       border-radius: 12px;
@@ -500,8 +517,37 @@
           {
             name: "Kreatív Hobbi",
             subtitle: "Hobbi közösségi platform",
+            url: "https://nandorfivince.github.io/nandorfivince.creativehobby.github.io/",
             tech: ["HTML","CSS","JS","Design kísérlet"],
             desc: "Közösségi platform hobbi csoportok szervezésére, eseménykezeléssel és webshop."
+          },
+          {
+            name: "Ilident páciens koordinátor",
+            subtitle: "Egyfázisú fogimplantátum – webes pácienskoordináció",
+            url: "https://nandorfivince.github.io/nandorfivince.ilident-design-A.github.io/",
+            variants: [
+              {
+                label: "Design A (aktív)",
+                url: "https://nandorfivince.github.io/nandorfivince.ilident-design-A.github.io/"
+              },
+              {
+                label: "Design B (alternatíva)",
+                url: "https://nandorfivince.github.io/nandorfivince.ilident-design-B.github.io/"
+              },
+              {
+                label: "Eredeti oldal",
+                url: "https://ilident.com/"
+              }
+            ],
+            tech: [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Később: Chatbot",
+              "Űrlap form",
+              "Notification system"
+            ],
+            desc: "Meglévő pácienskoordinátor weboldal felújítása és továbbfejlesztése. Célom egy modern, jól strukturált páciensoldal kialakítása, több design iránnyal és jövőbeli automatizált funkciókkal."
           }
         ],
         trainings: [
@@ -652,8 +698,37 @@
           {
             name: "Creative Hobby",
             subtitle: "Hobby community platform",
+            url: "https://nandorfivince.github.io/nandorfivince.creativehobby.github.io/",
             tech: ["HTML","CSS","JS","Design experiment"],
             desc: "Community platform for organizing hobby groups with event management and webshop."
+          },
+          {
+            name: "Ilident Patient Coordinator",
+            subtitle: "Single-phase dental implant patient coordination platform",
+            url: "https://nandorfivince.github.io/nandorfivince.ilident-design-A.github.io/",
+            variants: [
+              {
+                label: "Design A (active)",
+                url: "https://nandorfivince.github.io/nandorfivince.ilident-design-A.github.io/"
+              },
+              {
+                label: "Design B (alternative)",
+                url: "https://nandorfivince.github.io/nandorfivince.ilident-design-B.github.io/"
+              },
+              {
+                label: "Original site",
+                url: "https://ilident.com/"
+              }
+            ],
+            tech: [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Planned: Chatbot",
+              "Form handling",
+              "Notification system"
+            ],
+            desc: "Redesign and enhancement of an existing patient coordination website, exploring multiple design directions and preparing the platform for future automation features."
           }
         ],
         trainings: [
@@ -778,7 +853,29 @@
         <div class="project">
           <div class="top">
             <div>
-              <span class="name">${escapeHtml(p.name)}</span>
+              ${p.url
+                ? `
+                  <a class="name-link"
+                    href="${escapeHtml(p.url)}"
+                    target="_blank"
+                    rel="noreferrer"
+                    style="color: var(--accent-2); text-decoration: none;">
+                    ${escapeHtml(p.name)}
+                  </a>
+                  ${p.variants ? `
+                    <div class="project-variants">
+                      ${p.variants.map(v => `
+                        <a href="${escapeHtml(v.url)}"
+                          target="_blank"
+                          rel="noreferrer">
+                          ${escapeHtml(v.label)}
+                        </a>
+                      `).join(" · ")}
+                    </div>
+                  ` : ""}
+                `
+                : `<span class="name">${escapeHtml(p.name)}</span>`
+              }
               ${p.subtitle ? `<span class="subtitle">— ${escapeHtml(p.subtitle)}</span>` : ""}
             </div>
           </div>
